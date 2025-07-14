@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos básicos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ylse Gonzales | Mentora en Comunicación y Oratoria</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon del sitio -->
+    <link rel="icon" href="https://s3.us-east-2.amazonaws.com/globalvenezuela.com/img/ylse-Favicon-32x32.png" type="image/x-icon"> 
+    <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+
+
+    <!-- Fuentes de Google utilizadas en el sitio -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabecera principal del sitio con navegación -->
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <!-- Logo que enlaza a la sección hero -->
+                <a href="#hero" class="logo">Ylse Gonzales</a>
+                <!-- Menú de navegación principal -->
+                <ul class="nav-list">
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal del sitio -->
+    <main>
+        <!-- Sección hero/portada con llamada a la acción -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Transforma tu Voz, Impulsa tu Éxito.</h1>
+                <p>Ylse Gonzales: Tu mentora experta en comunicación y oratoria para impactar y conectar.</p>
+                <!-- Botones principales de llamada a la acción -->
+                <a href="#contact" class="btn primary-btn">Agenda una Sesión</a>
+                <a href="#services" class="btn secondary-btn">Conoce mis Servicios</a>
+            </div>
+        </section>
+
+        <!-- Sección "Sobre mí" con información personal -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="about-content">
+                    <!-- Imagen de perfil -->
+                    <!-- <img src="img/ylse-profile.jpg" alt="Ylse Gonzales - Mentora de Comunicación" class="profile-img"> -->
+                    <img src="https://s3.us-east-2.amazonaws.com/globalvenezuela.com/img/Promoci%C3%B3n+YG.png" alt="Ylse Gonzales - Mentora de Comunicación" class="profile-img">
+                    
+                    
+                    <!-- Texto descriptivo -->
+                    <div class="about-text">
+                        <h2>Más de 15 años empoderando voces.</h2>
+                        <p>Soy Ylse Gonzales, y mi pasión es ayudarte a descubrir el poder de tu propia voz...</p>
+                        <p>Mi metodología se centra en la oratoria persuasiva, el lenguaje no verbal...</p>
+                        <a href="#services" class="btn tertiary-btn">Mi Metodología</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de servicios ofrecidos -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <h2>Mis Servicios de Mentoría</h2>
+                <!-- Grid de tres columnas con los diferentes servicios -->
+                <div class="service-grid">
+                    <!-- Primer servicio: Mentoría individual -->
+                    <div class="service-item">
+                        <h3>Mentoría Individual</h3>
+                        <p>Sesiones personalizadas...</p>
+                        <ul>
+                            <li>Preparación de discursos</li>
+                            <li>Comunicación en reuniones</li>
+                            <li>Manejo del pánico escénico</li>
+                        </ul>
+                        <a href="#contact" class="btn small-btn">Más Info</a>
+                    </div>
+                    
+                    <!-- Segundo servicio: Talleres grupales -->
+                    <div class="service-item">
+                        <h3>Talleres Grupales</h3>
+                        <p>Programas intensivos en grupo...</p>
+                        <ul>
+                            <li>Taller de Presentaciones Efectivas</li>
+                            <li>Comunicación Estratégica</li>
+                            <li>Networking y Oratoria</li>
+                        </ul>
+                        <a href="#contact" class="btn small-btn">Más Info</a>
+                    </div>
+                    
+                    <!-- Tercer servicio: Conferencias -->
+                    <div class="service-item">
+                        <h3>Conferencias y Charlas</h3>
+                        <p>Charlas inspiradoras y educativas...</p>
+                        <ul>
+                            <li>Temas a medida</li>
+                            <li>Dinámicas interactivas</li>
+                            <li>Casos de estudio</li>
+                        </ul>
+                        <a href="#contact" class="btn small-btn">Más Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de testimonios de clientes -->
+        <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container">
+                <h2>Lo que dicen mis clientes</h2>
+                <!-- Contenedor para carrusel de testimonios (se llenará con JS) -->
+                <div class="testimonials-carousel">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto con formulario -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2>Conectemos y Potencia tu Voz</h2>
+                <p>Estoy lista para ayudarte a transformar tu comunicación...</p>
+                <!-- Formulario de contacto -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página con derechos de autor y redes sociales -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Año actual se actualizará con JavaScript -->
+            <p>&copy; <span id="current-year"></span> Ylse Gonzales. Todos los derechos reservados.</p>
+            
+            <!-- Enlaces a redes sociales -->
+            <div class="social-links">
+                <a href="https://twitter.com/ylsegonzales" target="_blank" aria-label="Twitter de Ylse Gonzales"><img src="img/social-icons/twitter.svg" alt="Twitter"></a>
+                <a href="https://linkedin.com/in/ylsegonzales" target="_blank" aria-label="LinkedIn de Ylse Gonzales"><img src="img/social-icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://instagram.com/ylsegonzales" target="_blank" aria-label="Instagram de Ylse Gonzales"><img src="img/social-icons/instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript principal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
