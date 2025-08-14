@@ -1,0 +1,30 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - master  # Cambia a "master" si esa es tu rama principal
+
+jobs:
+  deploy:
+    name: Deploy to FTP
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: FTP-Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: './'  # La carpeta de tu proyecto local a subir
+        remote-dir: ${{ secrets.FTP_PATH }}
+        protocol: ftps  # O ftp si tu servidor no tiene ftps
+        exclude: |
+          .git/
+          .github/
+          .vscode/
+          node_modules/
